@@ -48,10 +48,6 @@ title: Home
 
 <section class="recent-posts row">
 
-    <div class="section-title">
-        <h2><span>Eventos</span></h2>
-    </div>
-
     <div class="col-sm-8">
 
         <div class="section-title">
@@ -62,7 +58,7 @@ title: Home
 
             {% for post in paginator.posts %}
 
-            {% unless post.featured == false %}
+            {% unless post.featured == true %}
 
                 {% include postbox.html %}
 
